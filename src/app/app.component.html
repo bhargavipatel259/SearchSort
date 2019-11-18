@@ -1,4 +1,4 @@
-<div *ngIf="expression">
+<div *ngIf="expression" style="margin-left: 50px;">
     <h3>Title: Sort and Search</h3>
     <h3>Discription: Sort Search using API data</h3>
     <h3>Instructions to use:</h3>
@@ -10,11 +10,11 @@
     <button mat-raised-button class="btn" color="primary" (click)="reveal()">Click Me</button>
 </div>
 <div *ngIf="!expression">
-    <div class="search-hero">
-        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for a hero by id or name or country" />
+    <div class="md-form active-pink-2 mb-3">
+        <input class="search" type="search" id="search4" aria-label="Search" mdbInput [(ngModel)]="searchText" autocomplete="off" placeholder="Search Here !">
     </div>
-    <p style="margin-left: 50px;"> Please Click on the table header </p>
-    <table matSort (matSortChange)="sortData($event)">
+    <h3 style="margin-left: 45px;"> Please Click on the table header to load data ! </h3>
+    <table matSort (matSortChange)="sortData($event)" class="bckgrnd">
         <tr>
             <th mat-sort-header="id">id </th>
             <th mat-sort-header="employee_name">employee_name</th>

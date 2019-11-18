@@ -1,0 +1,55 @@
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    border-top-color: #000000;
+    animation: spinner .8s linear infinite;
+}
+
+.btn {
+    width: 150px;
+    background-color: #ffcdd2;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px 0px;
+    align-self: center;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: italic;
+    align-content: center;
+}
+
+table {
+    width: 100%;
+    padding: 25px 50px;
+}
+
+.search {
+    margin-left: 500px;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.bckgrnd {
+    background-color: blanchedalmond;
+}
